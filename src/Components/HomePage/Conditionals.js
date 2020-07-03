@@ -65,7 +65,36 @@ export default class Conditionals extends Component {
                 </View>
               </TouchableOpacity>
               <View style={styles.itemend}>
-                
+                <TouchableOpacity style={styles.circletest}>
+                  <View style={styles.circletest1}>
+                    <ImageBackground
+                      source={require('../Icon/Test1.png')}
+                      style={styles.icon1}  
+                    >                    
+                    </ImageBackground>
+                    <Text style={styles.texttest}>0%</Text>
+                  </View>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.circletest}>
+                  <View style={styles.circletest1}>
+                    <ImageBackground
+                      source={require('../Icon/Test2.png')}
+                      style={styles.icon1}  
+                    >                    
+                    </ImageBackground>
+                    <Text style={styles.texttest}>0%</Text>
+                  </View>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.circletest}>
+                  <View style={styles.circletest1}>
+                    <ImageBackground
+                      source={require('../Icon/Test3.png')}
+                      style={styles.icon1}  
+                    >                    
+                    </ImageBackground>
+                    <Text style={styles.texttest}>0%</Text>
+                  </View>
+                </TouchableOpacity>
               </View>
             </View> : null
           }
@@ -158,5 +187,35 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: 15,
     right: 20,
+  },
+  circletest:{
+    width: 70,
+    height: 70,
+    borderRadius: 50,
+    borderWidth: 1,
+    borderColor: "#ccc",
+    marginRight: 20,
+    marginLeft: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  circletest1:{
+    width: 65,
+    height: 65,
+    borderRadius: 50,
+    backgroundColor: "#f1f0f1",
+    marginRight: 20,
+    marginLeft: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  icon1:{
+    width: 35,
+    height: 35
+  },
+  texttest:{
+    color: "#9a3ae9",
+    fontSize: 10,
+    justifyContent: "center"
   }
 });

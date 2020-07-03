@@ -7,6 +7,7 @@ import HomeScreen from '../HomePage/HomeScreen';
 import Store from '../Store/Store'
 import MenuList from '../Menubars/MenuList'
 import Singular from '../Nouns/Singular'
+import Test1Nouns from '../Nouns/Test1'
 
 const Stack = createStackNavigator();
 
@@ -18,6 +19,7 @@ export default function Catagories (){
                     <Stack.Screen name="Home" component={HomeScreen} />
                     <Stack.Screen name="Store" component={Store} />
                     <Stack.Screen name="Singular" component={Singular} />
+                    <Stack.Screen name="Test1Nouns" component={Test1Nouns} />
                 </Stack.Navigator>
             </NavigationContainer>
     );
