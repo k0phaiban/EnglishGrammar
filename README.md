@@ -46,3 +46,4 @@ Các tính năng:
 - Tạo thành từ,
 - Nói tiếng Anh
 
+Author: Cao Văn Cường - Vũ Tuấn An
