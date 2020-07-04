@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "24296879788",
+    "firebase_url": "https://englishgrammar-ec8d9.firebaseio.com",
+    "project_id": "englishgrammar-ec8d9",
+    "storage_bucket": "englishgrammar-ec8d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24296879788:android:7a3799ea6a8214b8f39109",
+        "android_client_info": {
+          "package_name": "EnglishGrammar.App"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "24296879788-1n7vic37lubcct8omfdvv0nb5vng4agh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDFtYTx-bc4zynozozkEp7H1nStpGcB40"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "24296879788-1n7vic37lubcct8omfdvv0nb5vng4agh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

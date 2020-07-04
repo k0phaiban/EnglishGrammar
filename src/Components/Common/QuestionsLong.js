@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Text, View, StyleSheet,TouchableOpacity} from 'react-native'
 
-export default class QuestionShort extends Component {
+export default class QuestionLong extends Component {
     constructor(props){
         super(props)
         this.state={
@@ -20,8 +20,14 @@ export default class QuestionShort extends Component {
         else if(this.props.answer == this.props.answer2){
             this.setState({background1: "1"})
             this.setState({background2: "2"})
+            this.setState({background3: "1"})
+        }
+        else{
+            this.setState({background1: "1"})
+            this.setState({background2: "1"})
             this.setState({background3: "2"})
         }
+        
     }
 
     render() {

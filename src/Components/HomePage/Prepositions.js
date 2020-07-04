@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import { Text, View, StyleSheet,Button,ImageBackground,TouchableOpacity } from 'react-native'
 
 export default class Prepositions extends Component {
-    constructor(){
-        super();  
+    constructor(props){
+        super(props);  
         this.state ={  
           status: false,
           status2: true,
@@ -24,7 +24,7 @@ export default class Prepositions extends Component {
     }
      
       render() {
-      
+        const {navigation} = this.props;
         return (     
           <View>
           { this.state.status2 ? <View>
@@ -43,50 +43,50 @@ export default class Prepositions extends Component {
                   <View style={styles.circle2}></View>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=> this.props.navigation.navigate('PrepositionsOfPlace')}>
                 <View style={styles.item3}>
-                  <Text style={styles.text3}>Singular and plural nouns</Text>
+                  <Text style={styles.text3}>Prepositions Of place (1) </Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=> this.props.navigation.navigate('PrepositionsOfPlace2')}>
                 <View style={styles.item3}>
-                  <Text style={styles.text3}>Countable and Uncountable nouns</Text>
+                  <Text style={styles.text3}>Prepositions of place (2) </Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=> this.props.navigation.navigate('PrepositionsOfMovement')}>
                 <View style={styles.item3}>
-                  <Text style={styles.text3}>Countable and Uncountable nouns (2)</Text>
+                  <Text style={styles.text3}>Prepositions of movement </Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=> this.props.navigation.navigate('PrepositionsOfTime')} >
                 <View style={styles.item3}>
-                  <Text style={styles.text3}>Articles </Text>
-                  <Text style={styles.text4}>(a/an)</Text>
+                  <Text style={styles.text3}>Prepositions Of time (1)</Text>
+                  <Text style={styles.text4}></Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=> this.props.navigation.navigate('PrepositionsOfTime2')}>
                 <View style={styles.item3}>
-                <Text style={styles.text3}>Articles </Text>
-                  <Text style={styles.text4}>(the, a/an)</Text>
+                <Text style={styles.text3}>Prepositions Of time (2)  </Text>
+                  <Text style={styles.text4}></Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=> this.props.navigation.navigate('PrepositionsWithOtherMeanings')}>
                 <View style={styles.item3}>
-                  <Text style={styles.text3}>Uses of </Text>
-                  <Text style={styles.text4}>the </Text>
-                  <Text style={styles.text3}>and </Text>
-                  <Text style={styles.text4}>a/an</Text>
+                  <Text style={styles.text3}>Prepositions with other meanings</Text>
+                  <Text style={styles.text4}></Text>
+                  <Text style={styles.text3}></Text>
+                  <Text style={styles.text4}></Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=> this.props.navigation.navigate('CommonPhrasesWithPrepositions')}>
                 <View style={styles.item3}>
-                  <Text style={styles.text4}>some </Text>
-                  <Text style={styles.text3}>and </Text>
-                  <Text style={styles.text4}>any</Text>
+                  <Text style={styles.text4}>Common phrases with prepositions</Text>
+                  <Text style={styles.text3}></Text>
+                  <Text style={styles.text4}></Text>
                 </View>
               </TouchableOpacity>
               <View style={styles.itemend}>
-                <TouchableOpacity style={styles.circletest}>
+              <TouchableOpacity style={styles.circletest} onPress={()=>{this.props.navigation.navigate('Test1Nouns')}}>
                   <View style={styles.circletest1}>
                     <ImageBackground
                       source={require('../Icon/Test1.png')}
@@ -96,7 +96,7 @@ export default class Prepositions extends Component {
                     <Text style={styles.texttest}>0%</Text>
                   </View>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.circletest}>
+                <TouchableOpacity style={styles.circletest} onPress={()=>{this.props.navigation.navigate('Test1Nouns')}}>
                   <View style={styles.circletest1}>
                     <ImageBackground
                       source={require('../Icon/Test2.png')}
@@ -106,7 +106,7 @@ export default class Prepositions extends Component {
                     <Text style={styles.texttest}>0%</Text>
                   </View>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.circletest}>
+                <TouchableOpacity style={styles.circletest} onPress={()=>{this.props.navigation.navigate('Test1Nouns')}}>
                   <View style={styles.circletest1}>
                     <ImageBackground
                       source={require('../Icon/Test3.png')}
@@ -235,7 +235,7 @@ const styles = StyleSheet.create({
     height: 35
   },
   texttest:{
-    color: "#ea8ee3",
+    color: "#f5b2d9",
     fontSize: 10,
     justifyContent: "center"
   }

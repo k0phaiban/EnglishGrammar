@@ -146,7 +146,7 @@ export default function Singular({navigation}){
                     <QuestionsShort title="Choose the correct form:" question="I have three ____." answer1="child" answer2="children" answer="children"></QuestionsShort>
                     <QuestionsShort title="Choose the correct form:" question="A few men wear _____." answer1="watches" answer2="watch" answer="watches"></QuestionsShort>
                     <QuestionsShort title="Choose the correct form:" question="I saw a ____ running by." answer1="mouse" answer2="mice" answer="mouse"></QuestionsShort>
-                    <QuestionsLong title="Choose the correct form:" question="Whick is correct?" answer1="There are few bus on the road today." answer2="Thre is few buses on the road today." answer3="There are few buses on the road today."  answer="mouse"></QuestionsLong>
+                    <QuestionsLong title="Choose the correct form:" question="Whick is correct?" answer1="There are few bus on the road today." answer2="Thre is few buses on the road today." answer3="There are few buses on the road today."  answer="There are few buses on the road today."></QuestionsLong>
                     <QuestionsShort title="Choose the correct form:" question="I saw a ____ running by." answer1="mouse" answer2="mice" answer="mouse"></QuestionsShort>
                     
                 </ScrollView>

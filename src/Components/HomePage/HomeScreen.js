@@ -58,64 +58,64 @@ export default function HomeScreen({navigation}){
                         <Nouns navigation={navigation}></Nouns>
                     </View>
                     <View style={styles.item}>
-                        <Pronouns></Pronouns>
+                        <Pronouns navigation={navigation}></Pronouns>
                     </View>
                     <View style={styles.item}>
-                        <Prepositions></Prepositions>
+                        <Prepositions navigation={navigation}></Prepositions>
                     </View>
                     <View style={styles.item}>
-                        <Adjectives></Adjectives>
+                        <Adjectives navigation={navigation}></Adjectives>
                     </View>
                     <View style={styles.item}>
-                        <Present></Present>
+                        <Present navigation={navigation}></Present>
                     </View>
                     <View style={styles.item}>
-                        <Past></Past>
+                        <Past navigation={navigation}></Past>
                     </View>
                     <View style={styles.item}>
-                        <PresentPerfect></PresentPerfect>
+                        <PresentPerfect navigation={navigation}></PresentPerfect>
                     </View>
                     <View style={styles.item}>
-                        <Future></Future>
+                        <Future navigation={navigation}></Future>
                     </View>
                     <View style={styles.item}>
-                        <Modalverbs></Modalverbs>
+                        <Modalverbs navigation={navigation}></Modalverbs>
                     </View>
                     <View style={styles.item}>
-                        <Conditionals></Conditionals>
+                        <Conditionals navigation={navigation}></Conditionals>
                     </View>
                     <View style={styles.item}>
-                        <Sentence></Sentence>
+                        <Sentence navigation={navigation}></Sentence>
                     </View>
                     <View style={styles.item}>
-                        <Questions></Questions>
+                        <Questions navigation={navigation}></Questions>
                     </View>
                     <View style={styles.item}>
-                        <Verbs></Verbs>
+                        <Verbs navigation={navigation}></Verbs>
                     </View>
                     <View style={styles.item}>
-                        <Reported></Reported>
+                        <Reported navigation={navigation}></Reported>
                     </View>
                     <View style={styles.item}>
-                        <Relative></Relative>
+                        <Relative navigation={navigation}></Relative>
                     </View>
                     <View style={styles.item}>
-                        <Linking></Linking>
+                        <Linking navigation={navigation}></Linking>
                     </View>
                     <View style={styles.item}>
-                        <Passiveforms></Passiveforms>
+                        <Passiveforms navigation={navigation}></Passiveforms>
                     </View>
                     <View style={styles.item}>
-                        <Words></Words>
+                        <Words navigation={navigation}></Words>
                     </View>
                     <View style={styles.item}>
-                        <Froming></Froming>
+                        <Froming navigation={navigation}></Froming>
                     </View>
                     <View style={styles.item}>
-                        <Spoken></Spoken>
+                        <Spoken navigation={navigation}></Spoken>
                     </View>
                     <View style={styles.item}>
-                        <Appendix></Appendix>
+                        <Appendix navigation={navigation}></Appendix>
                     </View>
                 </ScrollView>
             </View>         

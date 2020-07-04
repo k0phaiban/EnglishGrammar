@@ -5,7 +5,7 @@ import Test from '../Common/Test';
 export default function Test1({navigation}){
         return (
             <View>
-                <Test></Test>
+                <Test navigation={navigation}></Test>
             </View>
         )
 }

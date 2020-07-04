@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import { Text, View, StyleSheet,Button,ImageBackground,TouchableOpacity } from 'react-native'
 
 export default class Pronouns extends Component {
-    constructor(){
-        super();  
+    constructor(props){
+        super(props);  
         this.state ={  
           status: false,
           status2: true,
@@ -24,7 +24,7 @@ export default class Pronouns extends Component {
     }
      
       render() {
-      
+        const {navigation} = this.props;
         return (     
           <View>
           { this.state.status2 ? <View>
@@ -43,50 +43,50 @@ export default class Pronouns extends Component {
                   <View style={styles.circle2}></View>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=> this.props.navigation.navigate('SubjectAndObject')}>
                 <View style={styles.item3}>
-                  <Text style={styles.text3}>Singular and plural nouns</Text>
+                  <Text style={styles.text3}>Subject and object pronouns </Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=> this.props.navigation.navigate('PossessiveForms')}>
                 <View style={styles.item3}>
-                  <Text style={styles.text3}>Countable and Uncountable nouns</Text>
+                  <Text style={styles.text3}>Possessive forms of nouns </Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=> this.props.navigation.navigate('PossessiveAdjectives')}>
                 <View style={styles.item3}>
-                  <Text style={styles.text3}>Countable and Uncountable nouns (2)</Text>
+                  <Text style={styles.text3}>this. that, these, those </Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=> this.props.navigation.navigate('ThisThat')}>
                 <View style={styles.item3}>
-                  <Text style={styles.text3}>Articles </Text>
-                  <Text style={styles.text4}>(a/an)</Text>
+                  <Text style={styles.text3}>Reflexive pronouns  </Text>
+                  <Text style={styles.text4}></Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=> this.props.navigation.navigate('AnotherOne')}>
                 <View style={styles.item3}>
-                <Text style={styles.text3}>Articles </Text>
-                  <Text style={styles.text4}>(the, a/an)</Text>
+                <Text style={styles.text3}>one/ones. anotherone  </Text>
+                  <Text style={styles.text4}></Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=> this.props.navigation.navigate('ReflexivePronouns')}>
                 <View style={styles.item3}>
-                  <Text style={styles.text3}>Uses of </Text>
-                  <Text style={styles.text4}>the </Text>
-                  <Text style={styles.text3}>and </Text>
-                  <Text style={styles.text4}>a/an</Text>
+                  <Text style={styles.text3}>Reflexive pronouns </Text>
+                  <Text style={styles.text4}></Text>
+                  <Text style={styles.text3}></Text>
+                  <Text style={styles.text4}></Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=> this.props.navigation.navigate('IndefinitePronouns')}>
                 <View style={styles.item3}>
-                  <Text style={styles.text4}>some </Text>
-                  <Text style={styles.text3}>and </Text>
-                  <Text style={styles.text4}>any</Text>
+                  <Text style={styles.text4}>Indefinite pronouns  </Text>
+                  <Text style={styles.text3}></Text>
+                  <Text style={styles.text4}></Text>
                 </View>
               </TouchableOpacity>
               <View style={styles.itemend}>
-                <TouchableOpacity style={styles.circletest}>
+              <TouchableOpacity style={styles.circletest} onPress={()=>{this.props.navigation.navigate('Test1Nouns')}}>
                   <View style={styles.circletest1}>
                     <ImageBackground
                       source={require('../Icon/Test1.png')}
@@ -96,7 +96,7 @@ export default class Pronouns extends Component {
                     <Text style={styles.texttest}>0%</Text>
                   </View>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.circletest}>
+                <TouchableOpacity style={styles.circletest} onPress={()=>{this.props.navigation.navigate('Test1Nouns')}}>
                   <View style={styles.circletest1}>
                     <ImageBackground
                       source={require('../Icon/Test2.png')}
@@ -106,7 +106,7 @@ export default class Pronouns extends Component {
                     <Text style={styles.texttest}>0%</Text>
                   </View>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.circletest}>
+                <TouchableOpacity style={styles.circletest} onPress={()=>{this.props.navigation.navigate('Test1Nouns')}}>
                   <View style={styles.circletest1}>
                     <ImageBackground
                       source={require('../Icon/Test3.png')}
@@ -235,7 +235,7 @@ const styles = StyleSheet.create({
     height: 35
   },
   texttest:{
-    color: "#ee9fde",
+    color: "#f5b2d9",
     fontSize: 10,
     justifyContent: "center"
   }

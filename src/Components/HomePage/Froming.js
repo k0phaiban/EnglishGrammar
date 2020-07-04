@@ -54,7 +54,7 @@ export default class Froming extends Component {
                 </View>
               </TouchableOpacity>
               <View style={styles.itemend}>
-                <TouchableOpacity style={styles.circletest}>
+              <TouchableOpacity style={styles.circletest} onPress={()=>{this.props.navigation.navigate('Test1Nouns')}}>
                   <View style={styles.circletest1}>
                     <ImageBackground
                       source={require('../Icon/Test1.png')}
@@ -64,7 +64,7 @@ export default class Froming extends Component {
                     <Text style={styles.texttest}>0%</Text>
                   </View>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.circletest}>
+                <TouchableOpacity style={styles.circletest} onPress={()=>{this.props.navigation.navigate('Test1Nouns')}}>
                   <View style={styles.circletest1}>
                     <ImageBackground
                       source={require('../Icon/Test2.png')}
@@ -74,7 +74,7 @@ export default class Froming extends Component {
                     <Text style={styles.texttest}>0%</Text>
                   </View>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.circletest}>
+                <TouchableOpacity style={styles.circletest} onPress={()=>{this.props.navigation.navigate('Test1Nouns')}}>
                   <View style={styles.circletest1}>
                     <ImageBackground
                       source={require('../Icon/Test3.png')}

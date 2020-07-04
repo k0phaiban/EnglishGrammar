@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import { Text, View, StyleSheet,Button,ImageBackground,TouchableOpacity } from 'react-native'
 
 export default class Past extends Component {
-    constructor(){
-        super();  
+    constructor(props){
+        super(props);  
         this.state ={  
           status: false,
           status2: true,
@@ -24,7 +24,7 @@ export default class Past extends Component {
     }
      
       render() {
-      
+        const {navigation} = this.props;
         return (     
           <View>
           { this.state.status2 ? <View>
@@ -43,72 +43,43 @@ export default class Past extends Component {
                   <View style={styles.circle2}></View>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=> this.props.navigation.navigate('PastSimpleOfBe')}>
                 <View style={styles.item3}>
-                  <Text style={styles.text3}>Singular and plural nouns</Text>
+                  <Text style={styles.text3}>Past simple of be</Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=> this.props.navigation.navigate('PastSimple')}>
                 <View style={styles.item3}>
-                  <Text style={styles.text3}>Countable and Uncountable nouns</Text>
+                  <Text style={styles.text3}>Past simple (1) </Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=> this.props.navigation.navigate('PastSimple2')}>
                 <View style={styles.item3}>
-                  <Text style={styles.text3}>Countable and Uncountable nouns (2)</Text>
+                  <Text style={styles.text3}>Past simple (2)</Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=> this.props.navigation.navigate('PastContinuous')}>
                 <View style={styles.item3}>
-                  <Text style={styles.text3}>Articles </Text>
-                  <Text style={styles.text4}>(a/an)</Text>
+                  <Text style={styles.text3}>Past continuous</Text>
+                  <Text style={styles.text4}></Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=> this.props.navigation.navigate('PastSorPastC')}>
                 <View style={styles.item3}>
-                <Text style={styles.text3}>Articles </Text>
-                  <Text style={styles.text4}>(the, a/an)</Text>
+                <Text style={styles.text3}>Past simple or past continuous?</Text>
+                  <Text style={styles.text4}></Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=> this.props.navigation.navigate('UsedTo')}>
                 <View style={styles.item3}>
-                  <Text style={styles.text3}>Uses of </Text>
-                  <Text style={styles.text4}>the </Text>
-                  <Text style={styles.text3}>and </Text>
-                  <Text style={styles.text4}>a/an</Text>
+                  <Text style={styles.text3}>Used to </Text>
+                  <Text style={styles.text4}></Text>
+                  <Text style={styles.text3}></Text>
+                  <Text style={styles.text4}></Text>
                 </View>
               </TouchableOpacity>
               <View style={styles.itemend}>
-                <TouchableOpacity style={styles.circletest}>
-                  <View style={styles.circletest1}>
-                    <ImageBackground
-                      source={require('../Icon/Test1.png')}
-                      style={styles.icon1}  
-                    >                    
-                    </ImageBackground>
-                    <Text style={styles.texttest}>0%</Text>
-                  </View>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.circletest}>
-                  <View style={styles.circletest1}>
-                    <ImageBackground
-                      source={require('../Icon/Test2.png')}
-                      style={styles.icon1}  
-                    >                    
-                    </ImageBackground>
-                    <Text style={styles.texttest}>0%</Text>
-                  </View>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.circletest}>
-                  <View style={styles.circletest1}>
-                    <ImageBackground
-                      source={require('../Icon/Test3.png')}
-                      style={styles.icon1}  
-                    >                    
-                    </ImageBackground>
-                    <Text style={styles.texttest}>0%</Text>
-                  </View>
-                </TouchableOpacity>
+                
               </View>
             </View> : null
           }
@@ -201,35 +172,5 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: 15,
     right: 20,
-  },
-  circletest:{
-    width: 70,
-    height: 70,
-    borderRadius: 50,
-    borderWidth: 1,
-    borderColor: "#ccc",
-    marginRight: 20,
-    marginLeft: 20,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  circletest1:{
-    width: 65,
-    height: 65,
-    borderRadius: 50,
-    backgroundColor: "#f1f0f1",
-    marginRight: 20,
-    marginLeft: 20,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  icon1:{
-    width: 35,
-    height: 35
-  },
-  texttest:{
-    color: "#d45aed",
-    fontSize: 10,
-    justifyContent: "center"
   }
 });

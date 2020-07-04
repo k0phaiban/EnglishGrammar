@@ -48,29 +48,29 @@ export default class Nouns extends Component {
                   <Text style={styles.text3}>Singular and plural nouns</Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=> this.props.navigation.navigate('Countable')}> 
                 <View style={styles.item3}>
                   <Text style={styles.text3}>Countable and Uncountable nouns</Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=> this.props.navigation.navigate('Countable2')} >
                 <View style={styles.item3}>
                   <Text style={styles.text3}>Countable and Uncountable nouns (2)</Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=> this.props.navigation.navigate('Articles')}>
                 <View style={styles.item3}>
                   <Text style={styles.text3}>Articles </Text>
                   <Text style={styles.text4}>(a/an)</Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=> this.props.navigation.navigate('Articles2')}>
                 <View style={styles.item3}>
                 <Text style={styles.text3}>Articles </Text>
                   <Text style={styles.text4}>(the, a/an)</Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=> this.props.navigation.navigate('UsesOfArticles')}>
                 <View style={styles.item3}>
                   <Text style={styles.text3}>Uses of </Text>
                   <Text style={styles.text4}>the </Text>
@@ -78,30 +78,30 @@ export default class Nouns extends Component {
                   <Text style={styles.text4}>a/an</Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=> this.props.navigation.navigate('SomeAny')}>
                 <View style={styles.item3}>
                   <Text style={styles.text4}>some </Text>
                   <Text style={styles.text3}>and </Text>
                   <Text style={styles.text4}>any</Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=> this.props.navigation.navigate('MuchMany')}>
                 <View style={styles.item3}>
                   <Text style={styles.text4}>much, many, alot of</Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=> this.props.navigation.navigate('LittleAndFew')} >
                 <View style={styles.item3}>
                   <Text style={styles.text4}>a little, a few, too much, too many, not enough </Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=> this.props.navigation.navigate('AllMost')}>
                 <View style={styles.item3}>
                   <Text style={styles.text4}>all, most, some, no/none, both</Text>
                 </View>
               </TouchableOpacity>
               <View style={styles.itemend}>
-                <TouchableOpacity style={styles.circletest} onPress={()=>{this.props.navigation.navigate('Test1Nouns')}}>
+              <TouchableOpacity style={styles.circletest} onPress={()=>{this.props.navigation.navigate('Test1Nouns')}}>
                   <View style={styles.circletest1}>
                     <ImageBackground
                       source={require('../Icon/Test1.png')}
@@ -111,7 +111,7 @@ export default class Nouns extends Component {
                     <Text style={styles.texttest}>0%</Text>
                   </View>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.circletest}>
+                <TouchableOpacity style={styles.circletest} onPress={()=>{this.props.navigation.navigate('Test1Nouns')}}>
                   <View style={styles.circletest1}>
                     <ImageBackground
                       source={require('../Icon/Test2.png')}
@@ -121,7 +121,7 @@ export default class Nouns extends Component {
                     <Text style={styles.texttest}>0%</Text>
                   </View>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.circletest}>
+                <TouchableOpacity style={styles.circletest} onPress={()=>{this.props.navigation.navigate('Test1Nouns')}}>
                   <View style={styles.circletest1}>
                     <ImageBackground
                       source={require('../Icon/Test3.png')}
